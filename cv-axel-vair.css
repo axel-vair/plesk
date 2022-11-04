@@ -14,9 +14,10 @@ main {
 }
 
 body { 
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
 }
+
 
 /* GRADIENT SECTION */
 
@@ -35,6 +36,7 @@ section {
 
 #pro { 
     margin: 20px 0 20px 0;
+    width: 100%
     
 }
 
@@ -46,6 +48,8 @@ section {
 
 #competences {
     margin: 20px 0 20px 0;
+    display: flex; 
+    flex-direction: column;
     
 }
 
@@ -54,6 +58,7 @@ section {
     display: flex;
     justify-content: space-around;
     padding-bottom: 20px;
+    flex-direction: column;
 
 }
 
@@ -299,6 +304,7 @@ summary:hover {
 .hover { 
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
 }
 
@@ -322,6 +328,7 @@ summary:hover {
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    align-self: center;
     
 
 }
@@ -331,14 +338,14 @@ summary:hover {
 .container {
     position: relative;
     justify-content: space-between;
-    width: 250px;
+    width: 100%;
     
   }
   
   .image {
     display: flex;
     justify-content: space-between;
-    width: 250px;
+    width: 100%;
     height: 250px;
   }
   
@@ -383,6 +390,7 @@ summary:hover {
 .container_projets {
     display: flex;
     width: 100%;
+    padding-bottom: 10px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -492,6 +500,7 @@ summary:hover {
 .container_link {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -545,4 +554,69 @@ summary:hover {
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
+}
+
+@media (min-width: 430px) { 
+    body { 
+       width: 900px;
+        margin: 0 auto;
+
+    }
+
+    #pro { 
+        margin: 20px 0 20px 0;
+        width: 100%
+      
+    }
+
+    .main_containter_passions {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        flex-direction: row !important;
+    
+    }
+
+    .container {
+        position: relative;
+        justify-content: space-between;
+        width: 250px;
+        
+      }
+
+      .image {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        height: 250px;
+      }
+
+      #competences {
+        margin: 20px 0 20px 0;
+        
+    }
+
+    .hover { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+    }
+
+    .competences_images { 
+
+    width: 150px;
+    height: 150px;
+    margin: 20px 0 20px 0;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    }
+    .container_link {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
 }
